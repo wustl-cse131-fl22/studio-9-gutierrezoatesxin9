@@ -17,11 +17,63 @@ public class NameToHeight {
 	 * and output the results. Be sure to handle the case where the map does not
 	 * contain a specified name.
 	 */
+
 	public static void main(String[] args) {
+
 		Scanner in = new Scanner(System.in);
 
-		// FIXME
-		throw new NotYetImplementedException();
+		Map <String,Integer> nameToHeight = new HashMap<>();
 
+		nameToHeight.put("Sofia", 67);
+		nameToHeight.put("Christina", 64);
+		nameToHeight.put("Mengxi", 65);
+
+		String input = "";
+		
+		while (!input.equals ("quit")) {
+			System.out.println("Hey girl...who's height do you want to see? Is it a lie? You'll never know.");
+			input = in.nextLine();
+			System.out.println(nameToHeight.get(input));
+			
+		}
 	}
 }
+		
+		
+	
+//		for (int i =0; i < nameToHeight.size();i++) {
+//			
+//			if (input == "Sofia"|| input == "Christina"||input == "Mengxi") {
+//				System.out.println(nameToHeight.get(input));
+//				
+//			}else {
+//				System.out.println("not in map");
+//				}
+//			}
+//		}
+//	}
+//
+
+
+
+//if (input == "Sofia") {
+//
+//System.out.println(nameToHeight.get(input));
+//
+//}
+//else if (input == "Christina"){
+//	
+//	System.out.println(nameToHeight.get(input));
+//	
+//}
+//else if (input == "Mengxi"){
+//	
+//	System.out.println(nameToHeight.get(input));
+//	
+//}
+//
+//else {
+//	
+//System.out.println("not in map");
+//	
+//}
